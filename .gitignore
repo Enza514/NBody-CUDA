@@ -3,6 +3,7 @@ helper_timer.h
 helper_cuda.h
 exception.h
 helper_gl.h
+helper_string.h
 
 # Prerequisites
 *.d
