@@ -208,7 +208,6 @@ void display() {
 	glVertexPointer(3, GL_FLOAT, 0, 0);
 
 	glEnableClientState(GL_VERTEX_ARRAY);
-	glColor3f(1.0, 0.0, 0.0);
 	glDrawArrays(GL_POINTS, 0, N);
 	glDisableClientState(GL_VERTEX_ARRAY);
 

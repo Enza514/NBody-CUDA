@@ -4,22 +4,39 @@
     <Filter Include="Headers">
       <UniqueIdentifier>{2721dbb0-a7b4-453d-abdd-503f077e3158}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CUDA Includes">
+      <UniqueIdentifier>{ebc0841e-4a55-4da5-b26b-d90fdbdcab12}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="helper_timer.h">
+    <ClInclude Include="particle.h">
       <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="helper_timer.h">
+      <Filter>CUDA Includes</Filter>
     </ClInclude>
     <ClInclude Include="exception.h">
-      <Filter>Headers</Filter>
+      <Filter>CUDA Includes</Filter>
     </ClInclude>
     <ClInclude Include="helper_cuda.h">
-      <Filter>Headers</Filter>
+      <Filter>CUDA Includes</Filter>
     </ClInclude>
     <ClInclude Include="helper_string.h">
+      <Filter>CUDA Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="nbody.cuh">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="nbbody.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="particle.cpp" />
+    <ClCompile Include="window.cpp" />
   </ItemGroup>
 </Project>
